@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_structure">
+
+    <fragment
+        android:id="@+id/nav_structure"
+        android:name="com.vineyard.fragments.StructureFragment"
+        android:label="@string/menu_structure"
+        tools:layout="@layout/structure_tab_fragment" />
+
+    <fragment
+        android:id="@+id/nav_reproduction"
+        android:name="com.vineyard.fragments.ReproductionFragment"
+        android:label="@string/menu_reproduction"
+        tools:layout="@layout/reproduction_fragment" />
+
+    <fragment
+        android:id="@+id/nav_bug"
+        android:name="com.vineyard.fragments.BugTabFragment"
+        android:label="@string/menu_bug"
+        tools:layout="@layout/bug_tab_fragment" />
+
+    <fragment
+        android:id="@+id/nav_preparation"
+        android:name="com.vineyard.fragments.PreparationFragment"
+        android:label="@string/menu_preparation"
+        tools:layout="@layout/preparation_fragment" />
+
+    <fragment
+        android:id="@+id/nav_library"
+        android:name="com.vineyard.fragments.LibraryFragment"
+        android:label="@string/menu_library"
+        tools:layout="@layout/library_fragment" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.vineyard.fragments.SettingsFragment"
+        android:label="@string/menu_settings" />
+
+</navigation>

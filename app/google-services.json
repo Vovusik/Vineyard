@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "328856628031",
+    "firebase_url": "https://vineyard-ed24c.firebaseio.com",
+    "project_id": "vineyard-ed24c",
+    "storage_bucket": "vineyard-ed24c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:328856628031:android:f24b01905663c5dd11418a",
+        "android_client_info": {
+          "package_name": "com.vineyard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "328856628031-l3uqtdnvu04f5v4ahuahqne2qiv92pbv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vineyard",
+            "certificate_hash": "0318585a956a36880d20146e5fb478c023d554b7"
+          }
+        },
+        {
+          "client_id": "328856628031-kr7cmmn9rpnrnr141vo6g4qbh2k5dptd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDe1R08gMjHN-WKp03tBoqIDeDwbYPgpa4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "328856628031-kr7cmmn9rpnrnr141vo6g4qbh2k5dptd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

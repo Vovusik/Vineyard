@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_structure"
+            android:icon="@drawable/drawer_ic_structure"
+            android:title="@string/menu_structure" />
+
+        <item
+            android:id="@+id/nav_reproduction"
+            android:icon="@drawable/drawer_icon_rozmnogennya"
+            android:title="@string/menu_reproduction" />
+
+        <item
+            android:id="@+id/nav_bug"
+            android:icon="@drawable/drawer_ic_bug"
+            android:title="@string/menu_bug" />
+
+        <item
+            android:id="@+id/nav_preparation"
+            android:icon="@drawable/drawer_ic_security"
+            android:title="@string/menu_preparation" />
+
+        <item
+            android:id="@+id/nav_library"
+            android:icon="@drawable/drawer_ic_library"
+            android:title="@string/menu_library" />
+
+    </group>
+
+    <group
+        android:id="@+id/nav_group_theme"
+
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/drawer_ic_settings"
+            android:title="@string/menu_settings" />
+    </group>
+
+</menu>

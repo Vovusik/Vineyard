@@ -1,0 +1,199 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:textColorSecondary">@color/textColorSecondary</item>
+        <item name="android:windowBackground">@color/windowBackground</item>
+
+        <item name="android:listDivider">@color/textColorSecondary</item>
+
+        <item name="alertDialogTheme">@style/AlertDialogTheme</item>
+
+        <item name="iconTint">@android:color/white</item>
+
+
+
+        <item name="actionOverflowMenuStyle">@style/PopupMenu</item>
+    </style>
+
+    <!-- Стиль для TabLayout. -->
+    <style name="MyCustomTabLayout" parent="Base.Widget.Design.TabLayout">
+        <item name="tabMaxWidth">@dimen/tab_max_width</item>
+        <item name="tabIndicatorColor">?attr/colorAccent</item>
+        <item name="tabIndicatorHeight">0dp</item>
+        <item name="tabPaddingStart">5dp</item>
+        <item name="tabPaddingEnd">5dp</item>
+        <item name="tabBackground">@drawable/tab_color_selector</item>
+        <item name="tabInlineLabel">true</item>
+        <item name="tabTextAppearance">@style/MyCustomTabTextAppearance</item>
+        <item name="tabSelectedTextColor">@android:color/white</item>
+        <item name="tabGravity">fill</item>
+        <item name="tabRippleColor">@android:color/transparent</item>
+        <item name="tabMode">fixed</item>
+    </style>
+
+    <style name="MyCustomTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="TabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--Section: Стиль для Table BottomSheetDialog розділу Preparation-->
+    <style name="MyTableDialogTextRowStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/textColorSecondary</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Section: Preparation -->
+    <style name="SheetDialog" parent="Theme.Design.Light.BottomSheetDialog">
+        <!--<item name="android:windowCloseOnTouchOutside">false</item>-->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.3</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <!-- Section: ProgressDialog -->
+    <style name="ProgressDialogTheme" parent="Theme.MaterialComponents.Light.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowBackground">@drawable/dialog_background</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Section: Bug -->
+    <style name="BugTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorHeight">4dp</item>
+        <item name="tabInlineLabel">true</item>
+        <item name="tabIndicator">@drawable/shape_tab_indicator</item>
+        <item name="tabGravity">fill</item>
+        <item name="tabRippleColor">@android:color/transparent</item>
+        <item name="tabMode">scrollable</item>
+        <item name="tabTextAppearance">@style/AppTabTextAppearance</item>
+        <item name="tabSelectedTextColor">@color/textColorPrimary</item>
+    </style>
+
+    <style name="AppTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/textColorSecondary</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <!-- Section: Стиль для Licenses-->
+    <style name="LicensesTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="android:textColorSecondary">@color/textColorSecondary</item>
+        <item name="android:textColorTertiary">@color/textColorSecondary</item>
+        <item name="android:listDivider">@color/textColorSecondary</item>
+        <item name="android:dividerHeight">1dp</item>
+        <item name="android:windowBackground">@color/windowBackground</item>
+
+        <!--Анімація старту актівіті Licenses-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowAnimationStyle">@style/MyAnimation.Activity</item>
+    </style>
+
+    <!-- Анимация для не полноэкранного окна или действия. -->
+    <style name="MyAnimation.Activity" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@android:anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@android:anim/slide_out_right</item>
+
+        <!--<item name="android:windowEnterAnimation">@anim/slide_in_right</item>-->
+        <!--<item name="android:windowExitAnimation">@anim/slide_out_left</item>-->
+    </style>
+
+    <!-- Section: Стиль для "Діалогу Налаштувань" -->
+    <style name="AlertDialogTheme" parent="Theme.MaterialComponents.DayNight.Dialog.Alert">
+        <item name="materialAlertDialogTitleTextStyle">@style/TitleTextStyle</item>
+        <item name="materialAlertDialogBodyTextStyle">@style/BodyTextStyle</item>
+        <!--        <item name="materialAlertDialogTitleIconStyle">@style/IconTitleStyle</item>-->
+        <!--        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>-->
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+        <item name="dialogCornerRadius">8dp</item>
+        <!--Задній фон діалогу-->
+        <item name="android:background">@color/rowBackground</item>
+        <!--<item name="backgroundTint">@color/textColorPrimary</item>-->
+        <!--Колір пустих кружечків - залишаю без кольору,
+        так як не знаю кольору "BodyTextStyle"-->
+        <item name="android:textColorSecondary">@color/textColorSecondary</item>
+        <!--Колір заповнених кружечків-->
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="TitleTextStyle" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <!--FixMe Не працює-->
+    <style name="BodyTextStyle" parent="MaterialAlertDialog.MaterialComponents.Body.Text">
+        <item name="android:textColor">#43A047</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAppearance">?attr/textAppearanceBody1</item>
+    </style>
+
+    <style name="NegativeButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">sans-serif</item>
+        <item name="rippleColor">@android:color/transparent</item>
+    </style>
+
+    <!--Section: Стиль для "NavigationDrawer" - заокруглений задній фон нажатого елементу-->
+    <style name="ShapeAppearanceOverlay.Nav" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">50%</item>
+        <item name="cornerSizeBottomRight">50%</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeTopLeft">0dp</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Preference Theme -->
+    <style name="MyStyle.Preference.v21" parent="@style/PreferenceThemeOverlay">
+        <item name="android:tint">@color/textColorSecondary</item>
+    </style>
+
+
+    <style name="PopupMenu" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:popupBackground">@drawable/popup_menu_background</item>
+    </style>
+
+
+</resources>

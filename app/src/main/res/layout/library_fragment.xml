@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container"
+    android:background="@color/windowBackground"
+    android:orientation="vertical"
+    tools:context=".fragments.LibraryFragment">
+
+    <TextView
+        android:id="@+id/titleLibrary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:text="Книга про виноробство" />
+
+    <TextView
+        android:id="@+id/authorLibrary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:textColor="@color/textColorSecondary"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        tools:text="Максим Бушко" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPagerLibrary"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:paddingLeft="48dp"
+        android:paddingRight="48dp" />
+
+</LinearLayout>
