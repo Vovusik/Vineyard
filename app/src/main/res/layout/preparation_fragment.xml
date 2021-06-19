@@ -1,41 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
-<androidx.core.widget.NestedScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.PreparationFragment">
 
-<androidx.coordinatorlayout.widget.CoordinatorLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/windowBackground"
-    tools:context=".fragments.PreparationFragment">
+    <com.inqbarna.tablefixheaders.TableFixHeaders
+        android:id="@+id/tablefixheaders"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/windowBackground"
+        android:scrollbars="horizontal|vertical" />
 
-
-        <com.inqbarna.tablefixheaders.TableFixHeaders
-            android:id="@+id/tablefixheaders"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/windowBackground"
-            android:scrollbars="horizontal|vertical" />
-
-
-
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
-<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
-<!--        android:id="@+id/fab"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_gravity="end|bottom"-->
-<!--        android:layout_marginEnd="16dp"-->
-<!--        android:src="@drawable/preparation_ic_information"-->
-<!--        app:backgroundTint="@color/colorAccent"-->
-<!--        app:tint="@android:color/white"-->
-<!--        tools:ignore="ContentDescription"-->
-<!--        android:layout_marginBottom="70dp"/>-->
-    </androidx.core.widget.NestedScrollView>
+</androidx.core.widget.NestedScrollView>
 
